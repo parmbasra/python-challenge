@@ -111,7 +111,7 @@ try:
     if not os.path.exists(analysis_path):
         
         #If not exist create the Analysis folder/directory first 
-        os.makedir(analysis_path)
+        os.makedirs(analysis_path)
         
         #Create or overwrite the file election_results.txt
         with open(election_results_txt_path, 'w') as election_file:

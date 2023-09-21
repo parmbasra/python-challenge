@@ -103,7 +103,7 @@ try:
     if not os.path.exists(analysis_path):
          #If not exist create the Analysis folder/directory first 
          
-         os.makedir(analysis_path)
+         os.makedirs(analysis_path)
          #Create or overwrite the file budget_data_analysis.txt
          with open(budget_txt_path, 'w') as budget_file:
             for to_print in print_analysis:
